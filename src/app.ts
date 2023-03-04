@@ -33,4 +33,6 @@ app.use(express.static(PATH_STORAGE));
 // routes
 app.use(router);
 
+app.get('/test', (req, res) => res.send('testing route'));
+
 export default app;
